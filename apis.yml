@@ -1,7 +1,30 @@
 aid: atantares
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/atantares.png
 name: atantares
-description: atantares is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Atantares (芯宿科技) is a Chinese synthetic-biology company based in Suzhou
+  Industrial Park that builds "silicon-based biology" — semiconductor-driven
+  biotechnology. Its chip-based, high-throughput platform (the EcoSyn synthesizer
+  and ECHOS MicroArray, using electrochemical oligonucleotide synthesis on
+  CMOS/MEMS microelectrode arrays) drives low-cost, high-fidelity DNA synthesis
+  and is expanding into RNA and protein synthesis and detection. Research-service
+  offerings include primer/oligo synthesis, gene synthesis, gene sequencing,
+  cloning and mutagenesis, strain-library preparation, and gene editing, built on
+  an in-house full-workflow automation, sequence-analysis, and order-management
+  platform. Backed by Qiming Venture Partners. The company operates a marketing
+  website only and publishes no public developer program, API, or documentation
+  at the time of this profile.
 url: https://raw.githubusercontent.com/api-evangelist/atantares/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Synthetic Biology
+- DNA Synthesis
+- Genomics
+- Life Sciences
+- Semiconductors
+- Gene Sequencing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atantares-domain-security.yml
 - type: Website
   url: https://atantares.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
